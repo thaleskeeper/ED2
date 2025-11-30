@@ -1,1 +1,25 @@
 //Complexidade de Algoritmos
+
+//Exemplo 1 O(1) tempo constante
+maretial = caixa[0]
+
+//Exemplo 2 O(Log (N) - Tempo Logaritmico
+materiais = ["aluminio", "cobalto", "ferro", "ouro", "prata"]
+materiais.sort()
+
+def busca_binaria(lista, alvo):
+    inicio = 0
+    fim = len(lista) - 1
+    while inicio <= fim:
+        meio = (inicio + fim) // 2
+        if lista[meio] == alvo:
+            return meio
+        elif lista[meio] < alvo:
+            inicio = meio + 1
+        else:
+            fim = meio - 1
+    return -1
+
+print(busca_binaria(materiais, "ouro"))
+
+//Exemplo 3 
