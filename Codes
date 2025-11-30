@@ -20,6 +20,24 @@ def busca_binaria(lista, alvo):
             fim = meio - 1
     return -1
 
-print(busca_binaria(materiais, "ouro"))
+//Exemplo 3 Chamado de O(N) - Tempo Linear
+def busca_linear(lista, alvo):
+    for item in lista:
+        if item == "prata":
+            break
+        if item == alvo:
+            return True
+    return False
 
-//Exemplo 3 
+materiais = ["aluminio", "ferro", "cobalto", "prata", "cobre"]
+
+//Exemplo 4 O(N LOG (N)) - tempo quase linear
+caixa.sort()
+
+//Exemplo 5 O(N^2) - Tempo Quadrático
+for i in range(len(caixa)):
+    for j in range(i + 1, len(caixa)):
+        if caixa[i] == estante[j]:
+            printf("Reperido", caixa[i])
+
+
