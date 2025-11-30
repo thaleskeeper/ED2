@@ -40,4 +40,16 @@ for i in range(len(caixa)):
         if caixa[i] == estante[j]:
             printf("Reperido", caixa[i])
 
+//Exemplo 6 (O^2N) - Tempo exponencial
+from intertools import combinations
+materiais = ["aluminio", "ferro", "cobalto", "prata", "ouro"]
+combinacoes = []
+for i in range (len(materiais) + 1):
+    for c in combinations(matetiais, i):
+for combo in combinacoes:
+    print(combo)
 
+//Exemplo 7F O(N!) - Tempo Fatorial
+from itertools import permutations
+for ordem in permutations(caixa):
+    print(ordem)
